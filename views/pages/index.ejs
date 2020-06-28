@@ -97,6 +97,35 @@
         <% }); %>
       </div>
     </div>
+    <div class="work-experience-contianer">
+      <div class="work-experience-top-container">
+        <h2 class="work-experience-header">
+          Work Experiences
+        </h2>
+        <div class="service-line"></div>
+        <p class="work-experience-text">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat.
+        </p>
+      </div>
+      <div class="work-experience-entries-container">
+        <% indexData.experience.forEach(function(experience){ %>
+        <div class="work-experience-entry">
+            <div class="work-experience-date">
+              <%- experience.date %>
+            </div>
+            <div class="work-experience-header">
+              <%- experience.title %>
+            </div>
+            <div class="work-experience-company">
+              <%- experience.company %>
+            </div>
+            <div class="work-experience-text">
+              <%- experience.text %>
+            </div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
   </main>
 
   <footer>

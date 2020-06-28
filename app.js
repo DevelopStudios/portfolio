@@ -44,6 +44,26 @@ let indexData = {
       header: 'Web Maintenance',
       text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat.'
     }
+  ],
+  experience: [
+    {
+      date:'FEB 2016 - 2017',
+      title: 'Web Developer',
+      company: 'Vivant',
+      text: 'My duties included communicating to clients regarding web related queries, Wordpress Development and converting PSD files to working Wordpress Sites.'
+    },
+    {
+      date:'FEB 2018 - 2019',
+      title: 'Front End Developer',
+      company: 'BeyondBI',
+      text: 'My duties included Wordpress Developement, Wordpress Maintenance and Theme Developement, and Angular development using Typescript,SCSS,HTML, and Nodejs.'
+    },
+    {
+      date:' FEB 2019 - current',
+      title: 'Front-End Engineer',
+      company: 'TouchFoundry',
+      text: 'My role is to write and style the front-end components that meet the requirements of our mocks and full-fill our user stories. I also monitor and process pull requests for production deployments.'
+    }
   ]
 }
 // set the view engine to ejs

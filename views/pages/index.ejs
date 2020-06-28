@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head'); -%>
+</head>
+
+<body class="container">
+
+  <header>
+    <%- include('../partials/header'); -%>
+  </header>
+
+  <main>
+    <div class="banner-container">
+      <div class="left-container">
+        <div class="typography">
+          <h1 class="banner-header">I'm Charl Roux</h1>
+          <p class="banner-text">Front-End Engineer</p>
+          <button class="banner-button">
+            Hire Me
+          </button>
+        </div>
+      </div>
+      <div class="right-container">
+        <img src="/assets/banner-image.png" alt="" class="banner-image">
+      </div>
+    </div>
+    <div class="about-container">
+      <div class="left-container">
+        <div class="header-container">
+          <div class="about-container-header">
+            <h2 class="about-header">
+              About Me
+            </h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="text-container">
+          <p class="about-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p class="about-text">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat.
+          </p>
+          <button class="banner-button">
+            View Works
+          </button>
+          <button class="banner-button outline">
+            Download CV
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="services-container">
+      <div class="top-container">
+        <h2 class="services-header">Services</h2>
+        <div class="service-line"></div>
+        <p class="services-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat.</p>
+      </div>
+      <div class="services">
+        <% indexData.service.forEach(function(service){ %>
+        <div class="entry" style="background-image: url('<%- service.background %>')">
+          <div class="icon">
+            <img src=<%- service.image %> alt="">
+          </div>
+          <div class="header"><%- service.header %></div>
+          <div class="text"><%- service.text %></div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+    <div class="recent-works-container">
+      <div class="top-container">
+        <h2 class="services-header">Recent Works</h2>
+        <div class="service-line"></div>
+        <p class="services-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat.</p>
+      </div>
+      <ul class='portfolio'>
+        <li class="sort all active" data-rel="all">All</li>
+        <li class="sort wordpress" data-rel="wordpress">Wordpress</li>
+        <li class="sort nodejs" data-rel="nodejs">Nodejs</li>
+        <li class="sort angular" data-rel="angular">Angular</li>
+      </ul>
+      <div style="clear:both;"></div>
+      <div id="portfolio">
+        <% indexData.projects.forEach(function(project){ %>
+        <div class="tile all <%- project.type %>">
+          <img src="<%- project.background %>" alt="Avatar" class="image">
+          <div class="company-image-overlay">
+            <div class="overlay-header"><%- project.name %></div>
+            <div class="overlay-text"><%- project.desc %></div>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <%- include('../partials/footer'); -%>
+  </footer>
+
+</body>
+
+</html>

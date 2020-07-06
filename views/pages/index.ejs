@@ -110,20 +110,125 @@
       <div class="work-experience-entries-container">
         <% indexData.experience.forEach(function(experience){ %>
         <div class="work-experience-entry">
-            <div class="work-experience-date">
-              <%- experience.date %>
-            </div>
-            <div class="work-experience-header">
-              <%- experience.title %>
-            </div>
-            <div class="work-experience-company">
-              <%- experience.company %>
-            </div>
-            <div class="work-experience-text">
-              <%- experience.text %>
-            </div>
+          <div class="work-experience-date">
+            <%- experience.date %>
+          </div>
+          <div class="work-experience-header">
+            <%- experience.title %>
+          </div>
+          <div class="work-experience-company">
+            <%- experience.company %>
+          </div>
+          <div class="work-experience-text">
+            <%- experience.text %>
+          </div>
         </div>
         <% }); %>
+      </div>
+    </div>
+    <div class="prompt-container">
+      <div class="prompt-top-container">
+        <h2 class="prompt-header">
+          Have Any Project In Mind?
+        </h2>
+        <div class="service-line"></div>
+        <div class="button-container">
+          <button class="banner-button prompt">
+            Hire Me
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="contact-container">
+      <div class="left-contact-container">
+        <div class="contact-header">
+          <h3 class="contact-header">
+            Contact Info
+          </h3>
+        </div>
+        <div class="contact-information">
+          <ul>
+            <li>
+              <div class="contact-item-container">
+                <div class="icon">
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M21 0C13.2805 0 6.99994 6.28056 6.99994 14C6.99994 16.3174 7.57933 18.6151 8.68076 20.6531L20.2344 41.5488C20.3882 41.8274 20.6813 42 21 42C21.3187 42 21.6118 41.8274 21.7656 41.5488L33.3234 20.6462C34.4206 18.6151 35 16.3173 35 13.9999C35 6.28056 28.7194 0 21 0ZM21 21C17.1402 21 14 17.8598 14 14C14 10.1403 17.1402 7.00005 21 7.00005C24.8597 7.00005 27.9999 10.1403 27.9999 14C27.9999 17.8598 24.8597 21 21 21Z"
+                      fill="#727B85" />
+                  </svg>
+                </div>
+                Strand, Cape Town
+              </div>
+            </li>
+            <li>
+              <div class="contact-item-container">
+                <div class="icon">
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                      <path
+                        d="M38.3086 5.00391H3.6914C3.12317 5.00391 2.5912 5.14361 2.10992 5.37387L20.918 24.1819L25.1335 20.1306C25.1335 20.1306 25.1338 20.1302 25.1339 20.1301C25.134 20.1299 25.1343 20.1297 25.1343 20.1297L39.8906 5.3742C39.4093 5.14377 38.877 5.00391 38.3086 5.00391Z"
+                        fill="#727B85" />
+                      <path d="M41.6306 7.11475L27.7441 21.0005L41.6301 34.8865C41.8603 34.4052 42 33.8733 42 33.305V8.69565C42 8.12775 41.8607 7.59586 41.6306 7.11475Z" fill="#727B85" />
+                      <path d="M0.369961 7.11328C0.139699 7.59456 0 8.12653 0 8.69476V33.3041C0 33.872 0.139535 34.4041 0.369633 34.8852L14.2561 20.9994L0.369961 7.11328Z" fill="#727B85" />
+                      <path
+                        d="M26.0041 22.7404L21.788 26.7922C21.5477 27.0325 21.2328 27.1527 20.9181 27.1527C20.6033 27.1527 20.2884 27.0325 20.0481 26.7922L15.9961 22.7402L2.10938 36.6261C2.59073 36.8565 3.12304 36.9964 3.69143 36.9964H38.3086C38.8768 36.9964 39.4088 36.8567 39.8901 36.6264L26.0041 22.7404Z"
+                        fill="#727B85" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0">
+                        <rect width="42" height="42" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                info.charlroux.co.za
+              </div>
+            </li>
+            <li>
+              <div class="contact-item-container">
+                <div class="icon">
+                  <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                      <path
+                        d="M42.309 30.1937C39.4927 30.1937 36.7274 29.7533 34.107 28.8873C32.8229 28.4493 31.2444 28.8511 30.4607 29.656L25.2885 33.5605C19.2902 30.3586 15.5953 26.6649 12.4371 20.7116L16.2267 15.6741C17.2113 14.6909 17.5645 13.2546 17.1413 11.9069C16.2717 9.27271 15.8299 6.50876 15.8299 3.69126C15.83 1.65588 14.1741 0 12.1388 0H3.69114C1.65588 0 0 1.65588 0 3.69114C0 27.0206 18.9796 46 42.309 46C44.3442 46 46.0001 44.3441 46.0001 42.3089V33.8848C46 31.8496 44.3441 30.1937 42.309 30.1937Z"
+                        fill="#727B85" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0">
+                        <rect width="46" height="46" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                082 954 3244
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-contact-container">
+        <div class="contact-form">
+          <form class="form" id="form1">
+
+            <p class="name">
+              <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+            </p>
+
+            <p class="email">
+              <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+            </p>
+
+            <p class="text">
+              <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+            </p>
+
+
+            <div class="submit">
+              <input type="submit" value="SEND MESSAGE" id="button-blue" />
+              <div class="ease"></div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </main>

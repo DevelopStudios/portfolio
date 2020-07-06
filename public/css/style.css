@@ -484,6 +484,225 @@ color: #FFFFFF;
     display: flex;
     width: 93%;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 70px;
+}
+
+/* Work Experience Hover States */
+.work-experience-entry:hover {
+    background: #FEC110;
+}
+
+.work-experience-entry:hover .work-experience-header {
+    color: #32333C !important;
+}
+
+.work-experience-entry:hover .work-experience-text {
+  color: #32333C !important;
+}
+
+/* Prompt Styling */
+.prompt-container {
+    background: #303131;
+    padding: 2% 3% 3%;
+}
+.prompt-container h2.prompt-header {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 43px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+button.banner-button.prompt {
+    background: #fff;
+    color: #000;
+}
+/* Contact Section */
+.contact-container {
+    background: #2B2C2C;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+
+#form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+  margin-top:30px;
+	margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#fff;
+	font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #fff;
+	color: #fff;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+      width: 229px;
+      background: #BC8B31;
+      border-radius: 5px;
+      height: 64px;
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 36px;
+      text-align: center;
+      color: #FFFFFF;
+      border: none;
+}
+
+#button-blue:hover{
+	background-color: #fff;
+	color: #BC8B31;
+}
+
+.submit:hover {
+	color: #3498db;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+form#form1 {
+    min-width: 696px;
+}
+
+.left-contact-container .contact-information ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-item-container {
+    display: flex;
+    align-items: center;
+}
+
+.right-contact-container .contact-form form#form1 p input {
+   background: #363737;
+}
+
+.right-contact-container .contact-form form#form1 p textarea {
+   background: #363737;
+}
+
+h3.contact-header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.contact-information ul li .contact-item-container .icon {
+    margin-right: 30px;
+}
+.contact-information ul li .contact-item-container {
+    padding-bottom: 50px
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
 }

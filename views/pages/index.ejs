@@ -27,6 +27,7 @@
       </div>
     </div>
     <div class="about-container">
+      <div class="flex-container">
       <div class="left-container">
         <div class="header-container">
           <div class="about-container-header">
@@ -53,6 +54,7 @@
           </button>
         </div>
       </div>
+      </div>
     </div>
     <div class="services-container">
       <div class="top-container">
@@ -73,6 +75,7 @@
       </div>
     </div>
     <div class="recent-works-container">
+      <div class="inner-container">
       <div class="top-container">
         <h2 class="services-header">Recent Works</h2>
         <div class="service-line"></div>
@@ -124,6 +127,7 @@
           </div>
         </div>
         <% }); %>
+      </div>
       </div>
     </div>
     <div class="prompt-container">
@@ -208,14 +212,14 @@
       </div>
       <div class="right-contact-container">
         <div class="contact-form">
-          <form class="form" id="form1">
+          <form class="form" id="form1" action="/" target="_blank" method="post">
 
             <p class="name">
               <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
             </p>
 
             <p class="email">
-              <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+              <input name="email" type="email" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
             </p>
 
             <p class="text">

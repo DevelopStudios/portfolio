@@ -31,7 +31,7 @@ $(function () {
     $(overlay).hide();
   }
   let menuButton = $(".hamburger");
-  let mobileMenu = $(".mobile-menu");
+  let mobileMenu = $(".mobile-menu ul");
   mobileMenu.hide();
   menuButton.click(toggleMobileMenu);
   function toggleMobileMenu() {

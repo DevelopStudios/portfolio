@@ -756,7 +756,7 @@ nav.navbar.navbar-default .container-fluid .mobile-container {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 780px) {
   nav.navbar.navbar-default .container-fluid .right-container {
     display: none !important;
   }
@@ -876,4 +876,14 @@ button.hamburger.hamburger--collapse {
   margin-top: 20px;
   margin-right: 20px;
   outline: none;
+}
+@media only screen and (max-width: 420px) {
+.banner-image {
+    width: auto;
+    height: 370px;
+    padding-right: 1vw;
+}
+ul.portfolio li {
+    margin-right: 30px;
+}
 }

@@ -1,11 +1,12 @@
-require("dotenv").config();
+// require("dotenv").config();
 const http = require("http");
 const express = require("express");
 const app = express();
 const parser = require("body-parser");
 const bodyParser = require("body-parser");
 const sgMail = require("@sendgrid/mail");
-sgMail.setApiKey(process.env.API_KEY);
+// sgMail.setApiKey('process.env.API_KEY');
+// sgMail.setApiKey("SG.asdjalsdewoaisjdfowiehjfoakjsfoqjs");
 let ejs = require("ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -90,24 +91,24 @@ app.get("/", function (req, res) {
   res.render("pages/index", { indexData: indexData });
 });
 
-app.post("/", function (req, res) {
-  console.dir(req.body);
-  const msg = {
-    to: req.body.email,
-    from: "charlroux641@gmail.com",
-    subject: `Portfolio funnel ${req.body.name}`,
-    text: req.body.text,
-    html: "<p>This is a test tag</p>",
-  };
-  sgMail
-    .send(msg)
-    .then(() => {
-      console.log("Message sent");
-    })
-    .catch((error) => {
-      console.log(error.response.body);
-    });
-  res.redirect("/");
-});
+// app.post("/", function (req, res) {
+//   console.dir(req.body);
+//   const msg = {
+//     to: req.body.email,
+//     from: "charlroux641@gmail.com",
+//     subject: `Portfolio funnel ${req.body.name}`,
+//     text: req.body.text,
+//     html: "<p>This is a test tag</p>",
+//   };
+//   sgMail
+//     .send(msg)
+//     .then(() => {
+//       console.log("Message sent");
+//     })
+//     .catch((error) => {
+//       console.log(error.response.body);
+//     });
+//   res.redirect("/");
+// });
 
 app.listen(process.env.port || 3000, function () {});

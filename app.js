@@ -110,5 +110,4 @@ app.post("/", function (req, res) {
   res.redirect("/");
 });
 
-app.listen(process.env.port, function () {});
-console.log(process.env);
+app.listen(process.env.port || 3000, function () {});

@@ -111,3 +111,4 @@ app.post("/", function (req, res) {
 });
 
 app.listen(process.env.port, function () {});
+console.log(process.env);

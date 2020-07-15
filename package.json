@@ -1,7 +1,6 @@
 {
   "name": "y",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,6 +16,16 @@
     "express": "4.17.1",
     "moment": "2.26.0",
     "pug": "^3.0.0"
-  }
-  
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevelopStudios/portfolio.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/DevelopStudios/portfolio/issues"
+  },
+  "homepage": "https://github.com/DevelopStudios/portfolio#readme",
+  "description": ""
 }

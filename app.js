@@ -32,28 +32,28 @@ let indexData = {
       image: "/assets/icon.png",
       header: "Web Hosting",
       text:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat.",
+        "Basic webhosting with a backup solution with a well establish hosting company.",
     },
     {
       background: "/assets/web-development 1.png",
       image: "/assets/icon.png",
       header: "Web Developer",
       text:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat.",
+        "Building websites using best practices and W3C standards.",
     },
     {
       background: "/assets/Wordpress-development 1.png",
       image: "/assets/icon.png",
       header: "Wordpress Developement",
       text:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat.",
+        "Worpdress theme, and CMS developement using wordpress themeing engine.",
     },
     {
       background: "/assets/maintenance.jpg",
       image: "/assets/icon.png",
       header: "Web Maintenance",
       text:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat.",
+        "Maintaine and update existing websites and ensuring sites stay responsive and secure",
     },
   ],
   experience: [

@@ -1,11 +1,11 @@
 require("dotenv").config();
+const nodemailer = require("nodemailer");
 const http = require("http");
 const express = require("express");
 const app = express();
 const parser = require("body-parser");
 const bodyParser = require("body-parser");
 const sgMail = require("@sendgrid/mail");
-sgMail.setApiKey(process.env.API_KEY);
 let ejs = require("ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -91,23 +91,39 @@ app.get("/", function (req, res) {
 });
 
 app.post("/", function (req, res) {
-  console.dir(req.body);
-  const msg = {
-    to: req.body.email,
-    from: "charlroux641@gmail.com",
-    subject: `Portfolio funnel ${req.body.name}`,
-    text: req.body.text,
-    html: "<p>This is a test tag</p>",
-  };
-  sgMail
-    .send(msg)
-    .then(() => {
-      console.log("Message sent");
-    })
-    .catch((error) => {
-      console.log(error.response.body);
-    });
-  res.redirect("/");
+async function main() {
+  // Generate test SMTP service account from ethereal.email
+  // Only needed if you don't have a real mail account for testing
+  let testAccount = await nodemailer.createTestAccount();
+
+  // create reusable transporter object using the default SMTP transport
+  let transporter = nodemailer.createTransport({
+    host: "smtp.ethereal.email",
+    port: 587,
+    secure: false, // true for 465, false for other ports
+    auth: {
+      user: testAccount.user, // generated ethereal user
+      pass: testAccount.pass, // generated ethereal password
+    },
+  });
+
+  // send mail with defined transport object
+  let info = await transporter.sendMail({
+    from: '"Fred Foo 👻" <foo@example.com>', // sender address
+    to: "bar@example.com, baz@example.com", // list of receivers
+    subject: "Hello ✔", // Subject line
+    text: "Hello world?", // plain text body
+    html: "<b>Hello world?</b>", // html body
+  });
+
+  console.log("Message sent: %s", info.messageId);
+  // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+
+  // Preview only available when sending through an Ethereal account
+  console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+  // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+}
+main().catch(console.error);
 });
 
 app.listen(process.env.PORT || 3000, function () {});

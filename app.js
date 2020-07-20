@@ -88,12 +88,10 @@ app.use(express.static("public"));
 
 // index page
 app.get("/", function (req, res) {
-  console.dir(aws);
   res.render("pages/index", { indexData: indexData });
 });
 
 app.post("/", function (req, res) {
-console.log(req.body);
   async function main() {
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({

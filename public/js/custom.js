@@ -43,4 +43,48 @@ $(function () {
       mobileMenu.show(500);
     }
   }
+
+  //Scroll Spy
+  $("#home").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $(".navbar").offset().top,
+      },
+      1000
+    );
+  });
+  $("#about").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $(".about-container").offset().top,
+      },
+      1000
+    );
+  });
+  $("#service").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $(".services-container").offset().top,
+      },
+      1000
+    );
+  });
+  $("#port").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $(".recent-works-container").offset().top,
+      },
+      1000
+    );
+  });
+  $("#contact").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $(".contact-container").offset().top,
+      },
+      1000
+    );
+  });
 });
+
+

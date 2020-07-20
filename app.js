@@ -7,6 +7,11 @@ const parser = require("body-parser");
 const bodyParser = require("body-parser");
 const sgMail = require("@sendgrid/mail");
 let ejs = require("ejs");
+const aws = require('aws-sdk');
+
+let s3 = new aws.S3({
+  GMAIL_PASSWORD: process.env[GMAIL_PASSWORD],
+});
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -98,7 +103,7 @@ console.log(req.body);
       service: "gmail",
       auth: {
         user: "charlroux641@gmail.com",
-        pass: process.env['GMAIL_PASSWORD'],
+        pass: process.env['GMAIL_PASSWORD'] || s3.GMAIL_PASSWORD,
       },
     });
 

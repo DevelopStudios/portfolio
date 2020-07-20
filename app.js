@@ -7,6 +7,9 @@ const parser = require("body-parser");
 const bodyParser = require("body-parser");
 const sgMail = require("@sendgrid/mail");
 const aws = require("aws-sdk");
+let s3 = new aws.S3({
+  GMAIL_PASSWORD: process.env.GMAIL_PASSWORD,
+});
 let ejs = require("ejs");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -88,6 +91,7 @@ app.use(express.static("public"));
 
 // index page
 app.get("/", function (req, res) {
+  console.dir(s3);
   res.render("pages/index", { indexData: indexData });
 });
 

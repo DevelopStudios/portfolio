@@ -88,7 +88,6 @@ app.use(express.static("public"));
 
 // index page
 app.get("/", function (req, res) {
-  console.dir(process.env.GMAIL_PASSWORD);
   res.render("pages/index", { indexData: indexData });
 });
 
@@ -99,7 +98,7 @@ app.post("/", function (req, res) {
       service: "gmail",
       auth: {
         user: "charlroux641@gmail.com",
-        pass: process.env['GMAIL_PASSWORD'],
+        pass: process.env["GMAIL_PASSWORD"] || process.env.GMAIL_PASSWORD,
       },
     });
 

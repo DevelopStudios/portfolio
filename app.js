@@ -6,12 +6,8 @@ const app = express();
 const parser = require("body-parser");
 const bodyParser = require("body-parser");
 const sgMail = require("@sendgrid/mail");
+const aws = require("aws-sdk");
 let ejs = require("ejs");
-const aws = require('aws-sdk');
-
-let s3 = new aws.S3({
-  GMAIL_PASSWORD: process.env[GMAIL_PASSWORD],
-});
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -92,6 +88,7 @@ app.use(express.static("public"));
 
 // index page
 app.get("/", function (req, res) {
+  console.dir(aws);
   res.render("pages/index", { indexData: indexData });
 });
 
@@ -103,7 +100,7 @@ console.log(req.body);
       service: "gmail",
       auth: {
         user: "charlroux641@gmail.com",
-        pass: process.env['GMAIL_PASSWORD'] || s3.GMAIL_PASSWORD,
+        pass: process.env['GMAIL_PASSWORD'],
       },
     });
 

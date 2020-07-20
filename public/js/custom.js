@@ -30,6 +30,11 @@ $(function () {
     let overlay = this.children[1];
     $(overlay).hide();
   }
+
+  $(".mobile-menu ul li").each(function (index) {
+    $(this).click(toggleMobileMenu);
+  });
+
   let menuButton = $(".hamburger");
   let mobileMenu = $(".mobile-menu ul");
   mobileMenu.hide();

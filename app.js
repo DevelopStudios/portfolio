@@ -91,7 +91,7 @@ app.use(express.static("public"));
 
 // index page
 app.get("/", function (req, res) {
-  console.dir(s3);
+  console.dir(s3.GMAIL_PASSWORD);
   res.render("pages/index", { indexData: indexData });
 });
 

@@ -830,6 +830,17 @@ nav.navbar.navbar-default .container-fluid .mobile-container {
 }
 
 @media only screen and (max-width: 580px) {
+  .navbar {
+    background: #2b2c2c;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+body {
+    margin-top: 50px;
+}
   #form-div {
     left: 3%;
     margin-right: 3%;
@@ -865,6 +876,7 @@ span.hamburger-inner::before {
   flex-flow: column;
   background: #2b2c2cbf;
   padding-bottom: 60px;
+  margin-top: inherit;
 }
 
 .mobile-menu ul li {

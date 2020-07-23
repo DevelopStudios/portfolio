@@ -58,6 +58,22 @@ $(function () {
       1000
     );
   });
+   $(".hire-button").click(function () {
+     $("html, body").animate(
+       {
+         scrollTop: $(".contact-container").offset().top,
+       },
+       1000
+     );
+   });
+   $(".portfolio-button").click(function () {
+     $("html, body").animate(
+       {
+         scrollTop: $(".recent-works-container").offset().top,
+       },
+       1000
+     );
+   });
   $("#about").click(function () {
     $("html, body").animate(
       {

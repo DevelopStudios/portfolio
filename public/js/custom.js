@@ -49,8 +49,11 @@ $(function () {
     }
   }
 
+  // Scroll Fuctions for mobile view
+
+
   //Scroll Spy
-  $("#home").click(function () {
+  $("#home > a").click(function (e) {
     $("html, body").animate(
       {
         scrollTop: $(".navbar").offset().top,
@@ -58,7 +61,7 @@ $(function () {
       1000
     );
   });
-   $(".hire-button").click(function () {
+   $(".hire-button").click(function (e) {
      $("html, body").animate(
        {
          scrollTop: $(".contact-container").offset().top,
@@ -66,7 +69,7 @@ $(function () {
        1000
      );
    });
-   $(".portfolio-button").click(function () {
+   $(".portfolio-button").click(function (e) {
      $("html, body").animate(
        {
          scrollTop: $(".recent-works-container").offset().top,
@@ -74,7 +77,7 @@ $(function () {
        1000
      );
    });
-  $("#about").click(function () {
+  $("#about").click(function (e) {
     $("html, body").animate(
       {
         scrollTop: $(".about-container").offset().top,
@@ -82,7 +85,8 @@ $(function () {
       1000
     );
   });
-  $("#service").click(function () {
+  $("#service").click(function (e) {
+    e.preventDefault();
     $("html, body").animate(
       {
         scrollTop: $(".services-container").offset().top,
@@ -90,7 +94,7 @@ $(function () {
       1000
     );
   });
-  $("#port").click(function () {
+  $("#port").click(function (e) {
     $("html, body").animate(
       {
         scrollTop: $(".recent-works-container").offset().top,
@@ -98,7 +102,7 @@ $(function () {
       1000
     );
   });
-  $("#contact").click(function () {
+  $("#contact").click(function (e) {
     $("html, body").animate(
       {
         scrollTop: $(".contact-container").offset().top,
@@ -106,6 +110,46 @@ $(function () {
       1000
     );
   });
+   $("#home-mobile").click(function (e) {
+     $("html, body").animate(
+       {
+         scrollTop: $(".banner-container").offset().top,
+       },
+       1000
+     );
+   });
+   $("#about-mobile").click(function (e) {
+     $("html, body").animate(
+       {
+         scrollTop: $(".about-container").offset().top,
+       },
+       1000
+     );
+   });
+   $("#service-mobile").click(function (e) {
+     e.preventDefault();
+     $("html, body").animate(
+       {
+         scrollTop: $(".services-container").offset().top,
+       },
+       1000
+     );
+   });
+   $("#port-mobile").click(function (e) {
+     $("html, body").animate(
+       {
+         scrollTop: $(".recent-works-container").offset().top,
+       },
+       1000
+     );
+   });
+   $("#contact-mobile").click(function (e) {
+     $("html, body").animate(
+       {
+         scrollTop: $(".contact-container").offset().top,
+       },
+       1000
+     );
+   });
 });
-
 

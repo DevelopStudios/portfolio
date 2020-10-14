@@ -27,6 +27,12 @@ let indexData = {
       background: "/assets/portfolio.png",
       type: "nodejs",
     },
+    {
+      name: "Boerseun Boomslopings",
+      desc: "This is a wordpress driven site using bootstrap 4",
+      background: "/assets/boerseun.png",
+      type: "wordpress",
+    }
   ],
   service: [
     {

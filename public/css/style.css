@@ -345,6 +345,7 @@ p.text-center.text-muted span.brand {
 #portfolio {
   display: flex;
   flex-flow: wrap;
+  justify-content: center;
   padding: 0 4%;
   min-height: 236px;
 }
@@ -749,7 +750,7 @@ nav.navbar.navbar-default .container-fluid .mobile-container {
     max-width: 1242px;
   }
   .recent-works-container .inner-container {
-    max-width: 1140px;
+    max-width: 1372px;
   }
   .contact-container {
     max-width: 1330px;

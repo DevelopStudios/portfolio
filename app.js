@@ -22,12 +22,6 @@ let indexData = {
       type: "angular",
     },
     {
-      name: "Portfolio",
-      desc: "This is a nodejs and vanilla javascript project",
-      background: "/assets/portfolio.png",
-      type: "nodejs",
-    },
-    {
       name: "Boerseun Boomslopings",
       desc: "This is a wordpress driven site using bootstrap 4",
       background: "/assets/boerseun.png",

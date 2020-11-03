@@ -32,7 +32,14 @@ let indexData = {
       desc: "This is a wordpress driven site using bootstrap 4",
       background: "/assets/boerseun.png",
       type: "wordpress",
+    },
+    {
+      name: "Shortify",
+      desc: "This is a React App POC with URL shortener",
+      background: "/assets/Shortify.png",
+      type: "react",
     }
+
   ],
   service: [
     {

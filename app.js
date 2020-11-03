@@ -36,7 +36,7 @@ let indexData = {
     {
       name: "Shortify",
       desc: "This is a React App POC with URL shortener",
-      background: "/assets/Shortify.png",
+      background: "/assets/shortify.png",
       type: "react",
     }
 

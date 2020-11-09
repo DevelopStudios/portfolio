@@ -30,8 +30,13 @@ let indexData = {
     {
       name: "Shortify",
       desc: "This is a React App POC with URL shortener",
-      background: "/assets/shortify.png",
+      background: "/assets/shortify-fix.jpg",
       type: "react",
+      url:'/project/shortify',
+      previewURL: 'https://shortifyy.herokuapp.com/',
+      gitURL:'https://github.com/DevelopStudios/shortify-app',
+      previewImage:'/assets/shortify-display.jpg',
+      previewDesc: 'This is a react focused app utilizing bootstrap for layout, Javascript for functionality and css for cosmetics.'
     }
 
   ],
@@ -98,8 +103,8 @@ app.get("/", function (req, res) {
   res.render("pages/index", { indexData: indexData });
 });
 
-app.get("/project", function (req, res) {
-  res.render("pages/project", {projectData: projectData});
+app.get("/project/shortify", function (req, res) {
+  res.render("pages/project", { indexData: indexData.projects[2] });
 });
 
 app.post("/", function (req, res) {

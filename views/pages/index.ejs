@@ -92,6 +92,7 @@
         <div style="clear:both;"></div>
         <div id="portfolio">
           <% indexData.projects.forEach(function(project){ %>
+            <a href="<%= project.url %>">
             <div class="tile all <%- project.type %>">
               <img src="<%- project.background %>" alt="Avatar" class="image">
               <div class="company-image-overlay">
@@ -99,6 +100,7 @@
                 <div class="overlay-text"><%- project.desc %></div>
               </div>
             </div>
+            </a>
           <% }); %>
         </div>
       </div>

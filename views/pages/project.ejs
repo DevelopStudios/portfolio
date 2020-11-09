@@ -13,24 +13,29 @@
 
   <main>
     <div class="feature-container">
-      <img src="/assets/beyond.png" alt="" class="feature-image">
+      <img src="<%- indexData.previewImage %>" alt="" class="feature-image">
     </div>
     <div class="banner-container project">
       <div class="left-container project">
         <div class="project-description__container">
-          <h2>Project</h2>
-          <p>Some random testSome random testSome random testSome random testSome random testSome random testSome random testSome random testSome random testSome random testSome random testSome random testSome random testSome random testSome random
-            test</p>
+          <h2><%- indexData.name %></h2>
+          <p>
+            <%- indexData.previewDesc %>
+          </p>
         </div>
       </div>
       <div class="right-container">
         <div class="links">
-          <button class="banner-button portfolio-button">
-            View Works
-          </button>
-          <button class="banner-button outline">
-            Download CV
-          </button>
+          <a href="<%- indexData.previewURL %>">
+            <button class="banner-button portfolio-button">
+              Live Preview
+            </button>
+          </a>
+          <a href="<%- indexData.gitURL %>">
+            <button class="banner-button outline">
+              Github
+            </button>
+          </a>
         </div>
       </div>
     </div>

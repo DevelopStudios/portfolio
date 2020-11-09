@@ -890,7 +890,24 @@ button.hamburger.hamburger--collapse {
   margin-right: 20px;
   outline: none;
 }
+@media only screen and (max-width: 500px) {
+  .feature-container img.feature-image {
+    max-width: 400px !important;
+}
+.banner-container .left-container.project {
+    width: 100% !important;
+    padding: 0 20px 0 20px;
+}
+.banner-container .right-container {
+    width: 84% !important;
+    padding: 0 20px 0 20px;
+    margin-bottom: 30%;
+}
+}
 @media only screen and (max-width: 420px) {
+  .feature-container img.feature-image {
+    max-width: 400px !important;
+}
 .banner-image {
     width: auto;
     height: 370px;
@@ -899,4 +916,37 @@ button.hamburger.hamburger--collapse {
 ul.portfolio li {
     margin-right: 30px;
 }
+}
+
+.banner-container .left-container.project {
+    width: 50%;
+}
+
+.banner-container .left-container.project .project-description__container p {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #9f9f9f;
+}
+
+.banner-container .left-container.project .project-description__container h2 {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 67px;
+    color: #ffffff;
+}
+
+.banner-container.project {
+    height: 50vh;
+}
+
+.feature-container img.feature-image {max-width: 500px;}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
 }

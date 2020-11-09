@@ -98,6 +98,10 @@ app.get("/", function (req, res) {
   res.render("pages/index", { indexData: indexData });
 });
 
+app.get("/project", function (req, res) {
+  res.render("pages/project", {projectData: projectData});
+});
+
 app.post("/", function (req, res) {
   async function main() {
     // create reusable transporter object using the default SMTP transport

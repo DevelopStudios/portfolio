@@ -16,7 +16,7 @@
       <div class="left-container">
         <div class="typography">
           <h1 class="banner-header">I'm Charl Roux</h1>
-          <p class="banner-text">Front-End Engineer</p>
+          <p class="banner-text">Front End Developer</p>
           <button class="banner-button hire-button">
             Get In Touch
           </button>
@@ -28,34 +28,34 @@
     </div>
     <div class="about-container">
       <div class="flex-container">
-      <div class="left-container">
-        <div class="header-container">
-          <div class="about-container-header">
-            <h2 class="about-header">
-              About Me
-            </h2>
-            <div class="line"></div>
+        <div class="left-container">
+          <div class="header-container">
+            <div class="about-container-header">
+              <h2 class="about-header">
+                About Me
+              </h2>
+              <div class="line"></div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="right-container">
-        <div class="text-container">
-          <p class="about-text">
-           My role is to write and style the front-end components that meet the requirements of our mocks and full-fill our user stories. I also monitor and process pull requests for production deployments.
-          </p>
-          <p class="about-text">
-          Being in the Web Industry for over three years has taught me you never stop learing, I am an active learner at Treehouse go check out my profile the give an overview of my <a href="https://teamtreehouse.com/charlroux">skills</a>.
-          </p>
-          <button class="banner-button portfolio-button">
-            View Works
-          </button>
-          <a href="/assets/files/Charl-Roux.pdf" download>
-          <button class="banner-button outline">
-            Download CV
-          </button>
-          </a>
+        <div class="right-container">
+          <div class="text-container">
+            <p class="about-text">
+              My role is to write and style the front-end components that meet the requirements of our mocks and full-fill our user stories. I also monitor and process pull requests for production deployments.
+            </p>
+            <p class="about-text">
+              I have <b>4 years experience</b>.
+            </p>
+            <button class="banner-button portfolio-button">
+              View Works
+            </button>
+            <a href="/assets/files/Charl-Roux.pdf" download>
+              <button class="banner-button outline">
+                Download CV
+              </button>
+            </a>
+          </div>
         </div>
-      </div>
       </div>
     </div>
     <!-- <div class="services-container">
@@ -78,58 +78,58 @@
     </div> -->
     <div class="recent-works-container">
       <div class="inner-container">
-      <div class="top-container">
-        <h2 class="services-header">Recent Works</h2>
-        <div class="service-line"></div>
-        <p class="services-text">Have a look at my recent works</p>
-      </div>
-      <ul class='portfolio'>
-        <li class="sort all active" data-rel="all">All</li>
-        <li class="sort wordpress" data-rel="wordpress">Wordpress</li>
-        <li class="sort angular" data-rel="angular">Angular</li>
-        <li class="sort react" data-rel="react">React</li>
-      </ul>
-      <div style="clear:both;"></div>
-      <div id="portfolio">
-        <% indexData.projects.forEach(function(project){ %>
-        <div class="tile all <%- project.type %>">
-          <img src="<%- project.background %>" alt="Avatar" class="image">
-          <div class="company-image-overlay">
-            <div class="overlay-header"><%- project.name %></div>
-            <div class="overlay-text"><%- project.desc %></div>
-          </div>
+        <div class="top-container">
+          <h2 class="services-header">Recent Works</h2>
+          <div class="service-line"></div>
+          <p class="services-text">Have a look at my recent works</p>
         </div>
-        <% }); %>
-      </div>
-    </div>
-    <div class="work-experience-contianer">
-      <div class="work-experience-top-container">
-        <h2 class="work-experience-header">
-          Work Experiences
-        </h2>
-        <div class="service-line"></div>
-        <p class="work-experience-text">
-          Here is a list of my work expriences to date.
-        </p>
-      </div>
-      <div class="work-experience-entries-container">
-        <% indexData.experience.forEach(function(experience){ %>
-        <div class="work-experience-entry">
-          <div class="work-experience-date">
-            <%- experience.date %>
-          </div>
-          <div class="work-experience-header">
-            <%- experience.title %>
-          </div>
-          <div class="work-experience-company">
-            <%- experience.company %>
-          </div>
-          <div class="work-experience-text">
-            <%- experience.text %>
-          </div>
+        <ul class='portfolio'>
+          <li class="sort all active" data-rel="all">All</li>
+          <li class="sort wordpress" data-rel="wordpress">Wordpress</li>
+          <li class="sort angular" data-rel="angular">Angular</li>
+          <li class="sort react" data-rel="react">React</li>
+        </ul>
+        <div style="clear:both;"></div>
+        <div id="portfolio">
+          <% indexData.projects.forEach(function(project){ %>
+            <div class="tile all <%- project.type %>">
+              <img src="<%- project.background %>" alt="Avatar" class="image">
+              <div class="company-image-overlay">
+                <div class="overlay-header"><%- project.name %></div>
+                <div class="overlay-text"><%- project.desc %></div>
+              </div>
+            </div>
+          <% }); %>
         </div>
-        <% }); %>
       </div>
+      <div class="work-experience-contianer">
+        <div class="work-experience-top-container">
+          <h2 class="work-experience-header">
+            Work Experiences
+          </h2>
+          <div class="service-line"></div>
+          <p class="work-experience-text">
+            Here is a list of my work expriences to date.
+          </p>
+        </div>
+        <div class="work-experience-entries-container">
+          <% indexData.experience.forEach(function(experience){ %>
+          <div class="work-experience-entry">
+            <div class="work-experience-date">
+              <%- experience.date %>
+            </div>
+            <div class="work-experience-header">
+              <%- experience.title %>
+            </div>
+            <div class="work-experience-company">
+              <%- experience.company %>
+            </div>
+            <div class="work-experience-text">
+              <%- experience.text %>
+            </div>
+          </div>
+          <% }); %>
+        </div>
       </div>
     </div>
     <div class="prompt-container">

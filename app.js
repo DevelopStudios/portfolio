@@ -16,16 +16,25 @@ app.use(bodyParser.json());
 let indexData = {
   projects: [
     {
-      name: "BeyondBI",
-      desc: "This is an Angular project built for marketing purposes and speed",
-      background: "/assets/beyond.png",
-      type: "angular",
+      name: "Charl Roux",
+      desc: "This is a nodejs project built for templating and speed",
+      background: "/assets/portfolio.png",
+      type: "nodejs",
+      url:'/project/charlroux',
+      previewURL: 'http://www.charlroux.co.za/',
+      previewImage:'/assets/charlroux.jpg',
+      previewDesc: 'This project was built using Nodejs as the backend and using Express and EJS for templatin.',
+      gitURL: 'https://github.com/DevelopStudios/portfolio'
     },
     {
       name: "Boerseun Boomslopings",
       desc: "This is a wordpress driven site using bootstrap 4",
       background: "/assets/boerseun.png",
       type: "wordpress",
+      url:'/project/boerseunboomslopings',
+      previewURL: 'http://www.boerseunboomslopings.co.za',
+      previewImage:'/assets/boerseunboomsloping.jpg',
+      previewDesc: 'This is a Wordpress Site built with Bootstrap,Javascript and Wordpress Theme Developement.',
     },
     {
       name: "Shortify",
@@ -105,6 +114,14 @@ app.get("/", function (req, res) {
 
 app.get("/project/shortify", function (req, res) {
   res.render("pages/project", { indexData: indexData.projects[2] });
+});
+
+app.get("/project/charlroux", function (req, res) {
+  res.render("pages/project", { indexData: indexData.projects[0] });
+});
+
+app.get("/project/boerseunboomslopings", function (req, res) {
+  res.render("pages/project", { indexData: indexData.projects[1] });
 });
 
 app.post("/", function (req, res) {

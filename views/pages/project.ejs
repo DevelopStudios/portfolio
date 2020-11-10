@@ -31,11 +31,13 @@
               Live Preview
             </button>
           </a>
+          <%if (indexData.gitURL) { %>
           <a href="<%- indexData.gitURL %>">
             <button class="banner-button outline">
               Github
             </button>
           </a>
+          <% } %>
         </div>
       </div>
     </div>

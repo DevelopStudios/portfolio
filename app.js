@@ -15,29 +15,29 @@ app.use(bodyParser.json());
 
 let indexData = {
   projects: [
-    {
-      name: "Charl Roux",
-      desc: "This is a nodejs project built for templating and speed",
-      background: "/assets/portfolio.png",
-      type: "nodejs",
-      url: "/project/charlroux",
-      previewURL: "http://www.charlroux.co.za/",
-      previewImage: "/assets/portfolio.png",
-      previewDesc:
-        "This project was built using Nodejs as the backend and using Express and EJS for templatin.",
-      gitURL: "https://github.com/DevelopStudios/portfolio",
-    },
-    {
-      name: "Boerseun Boomslopings",
-      desc: "This is a wordpress driven site using bootstrap 4",
-      background: "/assets/boerseun.png",
-      type: "wordpress",
-      url: "/project/boerseunboomslopings",
-      previewURL: "http://www.boerseunboomslopings.co.za",
-      previewImage: "/assets/boerseun.png",
-      previewDesc:
-        "This is a Wordpress Site built with Bootstrap,Javascript and Wordpress Theme Developement.",
-    },
+    // {
+    //   name: "Charl Roux",
+    //   desc: "This is a nodejs project built for templating and speed",
+    //   background: "/assets/portfolio.png",
+    //   type: "nodejs",
+    //   url: "/project/charlroux",
+    //   previewURL: "http://www.charlroux.co.za/",
+    //   previewImage: "/assets/portfolio.png",
+    //   previewDesc:
+    //     "This project was built using Nodejs as the backend and using Express and EJS for templatin.",
+    //   gitURL: "https://github.com/DevelopStudios/portfolio",
+    // },
+    // {
+    //   name: "Boerseun Boomslopings",
+    //   desc: "This is a wordpress driven site using bootstrap 4",
+    //   background: "/assets/boerseun.png",
+    //   type: "wordpress",
+    //   url: "/project/boerseunboomslopings",
+    //   previewURL: "http://www.boerseunboomslopings.co.za",
+    //   previewImage: "/assets/boerseun.png",
+    //   previewDesc:
+    //     "This is a Wordpress Site built with Bootstrap,Javascript and Wordpress Theme Developement.",
+    // },
     {
       name: "Shortify",
       desc: "This is a React App POC with URL shortener",
@@ -60,6 +60,17 @@ let indexData = {
       gitURL: "https://github.com/DevelopStudios/react-todo-app",
       previewImage: "/assets/todo-banner.png",
       previewDesc: "This is a react to-do app using just react hooks",
+    },
+    {
+      name: "Meet",
+      desc: "This is a landing page built for lead generation",
+      background: "/assets/meet-preview.jpg",
+      type: "nodejs",
+      url: "/project/Meet",
+      previewURL: "https://meet-view.herokuapp.com/",
+      gitURL: "https://github.com/DevelopStudios/meet",
+      previewImage: "/assets/meet-preview.jpg",
+      previewDesc: "This is a landing page built for lead generation",
     },
   ],
   service: [
@@ -126,7 +137,7 @@ app.get("/", function (req, res) {
 });
 
 app.get("/project/shortify", function (req, res) {
-  res.render("pages/project", { indexData: indexData.projects[2] });
+  res.render("pages/project", { indexData: indexData.projects[0] });
 });
 
 app.get("/project/charlroux", function (req, res) {
@@ -134,7 +145,11 @@ app.get("/project/charlroux", function (req, res) {
 });
 
 app.get("/project/todo", function (req, res) {
-  res.render("pages/project", { indexData: indexData.projects[3] });
+  res.render("pages/project", { indexData: indexData.projects[1] });
+});
+
+app.get("/project/Meet", function (req, res) {
+  res.render("pages/project", { indexData: indexData.projects[2] });
 });
 
 app.get("/project/boerseunboomslopings", function (req, res) {

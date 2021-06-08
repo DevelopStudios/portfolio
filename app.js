@@ -64,7 +64,7 @@ let indexData = {
     {
       name: "Meet",
       desc: "This is a landing page built for lead generation",
-      background: "/assets/meet-preview.jpg",
+      background: "/assets/meet-preview.png",
       type: "nodejs",
       url: "/project/Meet",
       previewURL: "https://meet-view.herokuapp.com/",

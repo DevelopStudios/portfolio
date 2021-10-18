@@ -144,6 +144,12 @@ app.get("/project/boerseunboomslopings", function (req, res) {
   res.render("pages/project", { indexData: indexData.projects[1] });
 });
 
+app.get("/project/order-summary", function (req, res) {
+  res.render("pages/project", { indexData: indexData.projects[3] });
+});
+
+
+
 app.post("/", function (req, res) {
   async function main() {
     // create reusable transporter object using the default SMTP transport
@@ -158,7 +164,7 @@ app.post("/", function (req, res) {
     // send mail with defined transport object
     let info = await transporter.sendMail({
       from: req.body.email, // sender address
-      to: "charlroux641@gmail.com", // list of receivers
+      to: "charl@codecave.org.za", // list of receivers
       subject: `Potential Client or Opportunity 🎊`, // Subject line
       html: `<p>customer: ${req.body.name}</p><br><p>from: ${req.body.email}</p><br><p>${req.body.text}</p><br><p><b>Sent from www.charlroux.co.za</b></p>`, // html body
     });

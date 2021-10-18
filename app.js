@@ -49,6 +49,17 @@ let indexData = {
       previewImage: "/assets/meet-preview.jpg",
       previewDesc: "This is a landing page built for lead generation",
     },
+    {
+      name: "Order Summary",
+      desc: "This is a order summary compoent built on minimal UI elemets",
+      background: "/assets/order-summary.jpg",
+      type: "nodejs",
+      url: "/project/order-summary",
+      previewURL: "https://meet-view.herokuapp.com/",
+      gitURL: "https://github.com/DevelopStudios/order-summary",
+      previewImage: "/assets/order-summary.jpg",
+      previewDesc: "This is a order summary compoent built on minimal UI elemets",
+    }
   ],
   service: [
     {

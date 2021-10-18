@@ -52,7 +52,7 @@ let indexData = {
     {
       name: "Order Summary",
       desc: "This is a order summary compoent built on minimal UI elemets",
-      background: "/assets/order-summary.jpg",
+      background: "/assets/order-summary-preview.jpg",
       type: "nodejs",
       url: "/project/order-summary",
       previewURL: "https://order-summary-view.herokuapp.com/",

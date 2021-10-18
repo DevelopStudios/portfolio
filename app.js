@@ -15,29 +15,6 @@ app.use(bodyParser.json());
 
 let indexData = {
   projects: [
-    // {
-    //   name: "Charl Roux",
-    //   desc: "This is a nodejs project built for templating and speed",
-    //   background: "/assets/portfolio.png",
-    //   type: "nodejs",
-    //   url: "/project/charlroux",
-    //   previewURL: "http://www.charlroux.co.za/",
-    //   previewImage: "/assets/portfolio.png",
-    //   previewDesc:
-    //     "This project was built using Nodejs as the backend and using Express and EJS for templatin.",
-    //   gitURL: "https://github.com/DevelopStudios/portfolio",
-    // },
-    // {
-    //   name: "Boerseun Boomslopings",
-    //   desc: "This is a wordpress driven site using bootstrap 4",
-    //   background: "/assets/boerseun.png",
-    //   type: "wordpress",
-    //   url: "/project/boerseunboomslopings",
-    //   previewURL: "http://www.boerseunboomslopings.co.za",
-    //   previewImage: "/assets/boerseun.png",
-    //   previewDesc:
-    //     "This is a Wordpress Site built with Bootstrap,Javascript and Wordpress Theme Developement.",
-    // },
     {
       name: "Shortify",
       desc: "This is a React App POC with URL shortener",

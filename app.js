@@ -55,7 +55,7 @@ let indexData = {
       background: "/assets/order-summary.jpg",
       type: "nodejs",
       url: "/project/order-summary",
-      previewURL: "https://meet-view.herokuapp.com/",
+      previewURL: "https://order-summary-view.herokuapp.com/",
       gitURL: "https://github.com/DevelopStudios/order-summary",
       previewImage: "/assets/order-summary.jpg",
       previewDesc: "This is a order summary compoent built on minimal UI elemets",

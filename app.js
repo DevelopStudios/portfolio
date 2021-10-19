@@ -106,12 +106,19 @@ let indexData = {
         "My duties included Wordpress Developement, Wordpress Maintenance and Theme Developement, and Angular development using Typescript,SCSS,HTML, and Nodejs.",
     },
     {
-      date: " FEB 2019 - current",
-      title: "Front-End Engineer",
+      date: " FEB 2019 - SEP 2021",
+      title: "Front-End Developer",
       company: "TouchFoundry",
       text:
         "My role is to write and style the front-end components that meet the requirements of our mocks and full-fill our user stories. I also monitor and process pull requests for production deployments.",
     },
+    {
+      date: " SEP 2021 - CURRENT",
+      title: "Front-End Developer",
+      company: "Nclose",
+      text:
+        "My role is to write and style the front-end components that meet the requirements of our mocks and full-fill our user stories. I also monitor and process pull requests for production deployments.",
+    }
   ],
 };
 // set the view engine to ejs

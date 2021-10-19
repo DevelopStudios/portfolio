@@ -950,3 +950,8 @@ ul.portfolio li {
     display: flex;
     justify-content: center;
 }
+.left-container .svg img {
+  max-width: 50px;
+  padding-top: 20px;
+  padding-left: 20px;
+}

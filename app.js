@@ -17,7 +17,7 @@ let indexData = {
   projects: [
     {
       name: "Shortify",
-      desc: "This is a React App POC with URL shortener",
+      desc: "A React app that integrates with the shrtcode URL shortening API and plays with browser storage in this landing page to provide you with shortened links.",
       background: "/assets/shortify.jpg",
       type: "react",
       url: "/project/shortify",
@@ -25,40 +25,40 @@ let indexData = {
       gitURL: "https://github.com/DevelopStudios/shortify-app",
       previewImage: "/assets/shortify.jpg",
       previewDesc:
-        "This is a react focused app utilizing bootstrap for layout, Javascript for functionality and css for cosmetics.",
+        "URL shortening API landing page",
     },
     {
       name: "Todo App",
-      desc: "This is a React Todo App",
+      desc: "A React app that follows the classic todo app with a few twists! This app includes a dark/light theme toggle and drag & drop reordering.",
       background: "/assets/todo-banner.png",
       type: "react",
       url: "/project/Todo",
       previewURL: "https://react-todo-app-c.herokuapp.com/",
       gitURL: "https://github.com/DevelopStudios/react-todo-app",
       previewImage: "/assets/todo-banner.png",
-      previewDesc: "This is a react to-do app using just react hooks",
+      previewDesc: "Todo app",
     },
     {
       name: "Meet",
-      desc: "This is a landing page built for lead generation",
+      desc: "This HTML & CSS only view is perfect if you're starting to want look into perfect landing pages. The responsive layout shifts as the browser scales up or down.",
       background: "/assets/meet-preview.png",
       type: "nodejs",
       url: "/project/Meet",
       previewURL: "https://meet-view.herokuapp.com/",
       gitURL: "https://github.com/DevelopStudios/meet",
       previewImage: "/assets/meet-preview.jpg",
-      previewDesc: "This is a landing page built for lead generation",
+      previewDesc: "Meet landing page"
     },
     {
       name: "Order Summary",
-      desc: "This is a order summary compoent built on minimal UI elemets",
+      desc: "A perfect compoent for online stores who are starting to build confidence in their online presence!",
       background: "/assets/order-summary-preview.jpg",
       type: "nodejs",
       url: "/project/order-summary",
       previewURL: "https://order-summary-view.herokuapp.com/",
       gitURL: "https://github.com/DevelopStudios/order-summary",
       previewImage: "/assets/order-summary.jpg",
-      previewDesc: "This is a order summary compoent built on minimal UI elemets",
+      previewDesc: "Order summary component",
     }
   ],
   service: [

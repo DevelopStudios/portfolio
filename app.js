@@ -17,7 +17,7 @@ let indexData = {
   projects: [
     {
       name: "Shortify",
-      desc: "A React app that integrates with the shrtcode URL shortening API and plays with browser storage in this landing page to provide you with shortened links.",
+      desc: "URL shortening API landing page",
       background: "/assets/shortify.jpg",
       type: "react",
       url: "/project/shortify",
@@ -25,40 +25,40 @@ let indexData = {
       gitURL: "https://github.com/DevelopStudios/shortify-app",
       previewImage: "/assets/shortify.jpg",
       previewDesc:
-        "URL shortening API landing page",
+        "A React app that integrates with the shrtcode URL shortening API and plays with browser storage in this landing page to provide you with shortened links.",
     },
     {
       name: "Todo App",
-      desc: "A React app that follows the classic todo app with a few twists! This app includes a dark/light theme toggle and drag & drop reordering.",
+      desc: "Todo app",
       background: "/assets/todo-banner.png",
       type: "react",
       url: "/project/Todo",
       previewURL: "https://react-todo-app-c.herokuapp.com/",
       gitURL: "https://github.com/DevelopStudios/react-todo-app",
       previewImage: "/assets/todo-banner.png",
-      previewDesc: "Todo app",
+      previewDesc: "A React app that follows the classic todo app with a few twists! This app includes a dark/light theme toggle and drag & drop reordering.",
     },
     {
       name: "Meet",
-      desc: "This HTML & CSS only view is perfect if you're starting to want look into perfect landing pages. The responsive layout shifts as the browser scales up or down.",
+      desc: "Meet landing page",
       background: "/assets/meet-preview.png",
       type: "nodejs",
       url: "/project/Meet",
       previewURL: "https://meet-view.herokuapp.com/",
       gitURL: "https://github.com/DevelopStudios/meet",
       previewImage: "/assets/meet-preview.jpg",
-      previewDesc: "Meet landing page"
+      previewDesc: "This HTML & CSS only view is perfect if you're starting to want look into perfect landing pages. The responsive layout shifts as the browser scales up or down."
     },
     {
       name: "Order Summary",
-      desc: "A perfect compoent for online stores who are starting to build confidence in their online presence!",
+      desc: "Order summary component",
       background: "/assets/order-summary-preview.jpg",
       type: "nodejs",
       url: "/project/order-summary",
       previewURL: "https://order-summary-view.herokuapp.com/",
       gitURL: "https://github.com/DevelopStudios/order-summary",
       previewImage: "/assets/order-summary.jpg",
-      previewDesc: "Order summary component",
+      previewDesc: "A perfect compoent for online stores who are starting to build confidence in their online presence!",
     }
   ],
   service: [

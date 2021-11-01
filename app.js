@@ -58,7 +58,7 @@ let indexData = {
       previewURL: "https://order-summary-view.herokuapp.com/",
       gitURL: "https://github.com/DevelopStudios/order-summary",
       previewImage: "/assets/Order-big.jpg",
-      previewDesc: "A perfect compoent for online stores who are starting to build confidence in their online presence!",
+      previewDesc: "A perfect component for online stores who are starting to build confidence in their online presence!",
     }
   ],
   service: [
@@ -78,9 +78,9 @@ let indexData = {
     {
       background: "/assets/Wordpress-development 1.png",
       image: "/assets/icon.png",
-      header: "Wordpress Developement",
+      header: "Wordpress Development",
       text:
-        "Worpdress theme, and CMS developement using wordpress themeing engine.",
+        "Worpdress theme, and CMS development using wordpress themeing engine.",
     },
     {
       background: "/assets/maintenance.jpg",
@@ -103,14 +103,14 @@ let indexData = {
       title: "Front End Developer",
       company: "BeyondBI",
       text:
-        "My duties included Wordpress Developement, Wordpress Maintenance and Theme Developement, and Angular development using Typescript,SCSS,HTML, and Nodejs.",
+        "My duties included Wordpress Development, Wordpress Maintenance and Theme Development, and Angular development using Typescript,SCSS,HTML, and Nodejs.",
     },
     {
       date: " FEB 2019 - SEP 2021",
       title: "Front-End Developer",
       company: "TouchFoundry",
       text:
-        "My role is to write and style the front-end components that meet the requirements of our mocks and full-fill our user stories. I also monitor and process pull requests for production deployments.",
+        "My role is to write and style the front-end components using React, Angular, and Typescript. I also monitor and process pull requests for production deployments.",
     },
     {
       date: " SEP 2021 - CURRENT",

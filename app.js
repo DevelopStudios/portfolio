@@ -30,12 +30,12 @@ let indexData = {
     {
       name: "Todo App",
       desc: "Todo app",
-      background: "/assets/todo.jpg",
+      background: "/assets/todo-banner.png",
       type: "react",
       url: "/project/Todo",
       previewURL: "https://react-todo-app-c.herokuapp.com/",
       gitURL: "https://github.com/DevelopStudios/react-todo-app",
-      previewImage: "/assets/todo-banner.png",
+      previewImage: "/assets/todo.jpg",
       previewDesc: "A React app that follows the classic todo app with a few twists! This app includes a dark/light theme toggle and drag & drop reordering.",
     },
     {

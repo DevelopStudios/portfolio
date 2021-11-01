@@ -30,7 +30,7 @@ let indexData = {
     {
       name: "Todo App",
       desc: "Todo app",
-      background: "/assets/todo-banner.png",
+      background: "/assets/todo.jpg",
       type: "react",
       url: "/project/Todo",
       previewURL: "https://react-todo-app-c.herokuapp.com/",

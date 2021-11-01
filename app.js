@@ -57,7 +57,7 @@ let indexData = {
       url: "/project/order-summary",
       previewURL: "https://order-summary-view.herokuapp.com/",
       gitURL: "https://github.com/DevelopStudios/order-summary",
-      previewImage: "/assets/order-summary.jpg",
+      previewImage: "/assets/Order-big.jpg",
       previewDesc: "A perfect compoent for online stores who are starting to build confidence in their online presence!",
     }
   ],
@@ -117,7 +117,7 @@ let indexData = {
       title: "Front-End Developer",
       company: "Nclose",
       text:
-        "My role is to write and style the front-end components that meet the requirements of our mocks and full-fill our user stories. I also monitor and process pull requests for production deployments.",
+        "My role is to write front-end components using angular to accommodate the backend structure and to full-full the given spec and requirements.",
     }
   ],
 };

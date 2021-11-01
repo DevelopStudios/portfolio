@@ -25,7 +25,7 @@ let indexData = {
       gitURL: "https://github.com/DevelopStudios/shortify-app",
       previewImage: "/assets/shortify.jpg",
       previewDesc:
-        "A React app that integrates with the shrtcode URL shortening API and plays with browser storage in this landing page to provide you with shortened links.",
+        "A React app that integrates with the shortcode URL shortening API and plays with browser storage in this landing page to provide you with shortened links.",
     },
     {
       name: "Todo App",

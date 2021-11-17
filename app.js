@@ -171,7 +171,7 @@ app.post("/", function (req, res) {
     // send mail with defined transport object
     let info = await transporter.sendMail({
       from: req.body.email, // sender address
-      to: "charl@codecave.org.za", // list of receivers
+      to: "charlroux641@gmail.com", // list of receivers
       subject: `Potential Client or Opportunity 🎊`, // Subject line
       html: `<p>customer: ${req.body.name}</p><br><p>from: ${req.body.email}</p><br><p>${req.body.text}</p><br><p><b>Sent from www.charlroux.co.za</b></p>`, // html body
     });

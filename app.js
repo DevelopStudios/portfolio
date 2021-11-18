@@ -25,7 +25,7 @@ let indexData = {
       gitURL: "https://github.com/DevelopStudios/shortify-app",
       previewImage: "/assets/shortify.jpg",
       previewDesc:
-        "A React app that integrates with the shrtcode URL shortening API and plays with browser storage in this landing page to provide you with shortened links.",
+        "A React app that integrates with the shortcode URL shortening API and plays with browser storage in this landing page to provide you with shortened links.",
     },
     {
       name: "Todo App",
@@ -35,7 +35,7 @@ let indexData = {
       url: "/project/Todo",
       previewURL: "https://react-todo-app-c.herokuapp.com/",
       gitURL: "https://github.com/DevelopStudios/react-todo-app",
-      previewImage: "/assets/todo-banner.png",
+      previewImage: "/assets/todo.jpg",
       previewDesc: "A React app that follows the classic todo app with a few twists! This app includes a dark/light theme toggle and drag & drop reordering.",
     },
     {
@@ -52,13 +52,13 @@ let indexData = {
     {
       name: "Order Summary",
       desc: "Order summary component",
-      background: "/assets/order-summary-preview.jpg",
+      background: "/assets/order.png",
       type: "nodejs",
       url: "/project/order-summary",
       previewURL: "https://order-summary-view.herokuapp.com/",
       gitURL: "https://github.com/DevelopStudios/order-summary",
-      previewImage: "/assets/order-summary.jpg",
-      previewDesc: "A perfect compoent for online stores who are starting to build confidence in their online presence!",
+      previewImage: "/assets/Order-big.jpg",
+      previewDesc: "A perfect component for online stores who are starting to build confidence in their online presence!",
     }
   ],
   service: [
@@ -78,9 +78,9 @@ let indexData = {
     {
       background: "/assets/Wordpress-development 1.png",
       image: "/assets/icon.png",
-      header: "Wordpress Developement",
+      header: "Wordpress Development",
       text:
-        "Worpdress theme, and CMS developement using wordpress themeing engine.",
+        "Worpdress theme, and CMS development using wordpress themeing engine.",
     },
     {
       background: "/assets/maintenance.jpg",
@@ -103,21 +103,21 @@ let indexData = {
       title: "Front End Developer",
       company: "BeyondBI",
       text:
-        "My duties included Wordpress Developement, Wordpress Maintenance and Theme Developement, and Angular development using Typescript,SCSS,HTML, and Nodejs.",
+        "My duties included Wordpress Development, Wordpress Maintenance and Theme Development, and Angular development using Typescript,SCSS,HTML, and Nodejs.",
     },
     {
       date: " FEB 2019 - SEP 2021",
       title: "Front-End Developer",
       company: "TouchFoundry",
       text:
-        "My role is to write and style the front-end components that meet the requirements of our mocks and full-fill our user stories. I also monitor and process pull requests for production deployments.",
+        "My role is to write and style the front-end components using React, Angular, and Typescript. I also monitor and process pull requests for production deployments.",
     },
     {
       date: " SEP 2021 - CURRENT",
       title: "Front-End Developer",
       company: "Nclose",
       text:
-        "My role is to write and style the front-end components that meet the requirements of our mocks and full-fill our user stories. I also monitor and process pull requests for production deployments.",
+        "My role is to write front-end components using angular to accommodate the backend structure and to full-full the given spec and requirements.",
     }
   ],
 };

@@ -59,6 +59,17 @@ let indexData = {
       gitURL: "https://github.com/DevelopStudios/order-summary",
       previewImage: "/assets/Order-big.jpg",
       previewDesc: "A perfect component for online stores who are starting to build confidence in their online presence!",
+    },
+    {
+      name: "Entertainment web app",
+      desc: "Multi-page entertainment web app",
+      background: "/assets/entertainment.png",
+      type: "react",
+      url: "/project/entertainment",
+      previewURL: "https://entertain-app-local.herokuapp.com/",
+      gitURL: "https://github.com/DevelopStudios/entertainment",
+      previewImage: "/assets/entertainment-main.jpeg",
+      previewDesc: "A perfect component for online stores who are starting to build confidence in their online presence!",
     }
   ],
   service: [
@@ -153,6 +164,10 @@ app.get("/project/boerseunboomslopings", function (req, res) {
 
 app.get("/project/order-summary", function (req, res) {
   res.render("pages/project", { indexData: indexData.projects[3] });
+});
+
+app.get("/project/entertainment", function (req, res) {
+  res.render("pages/project", { indexData: indexData.projects[4] });
 });
 
 

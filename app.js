@@ -70,6 +70,17 @@ let indexData = {
       gitURL: "https://github.com/DevelopStudios/entertainment",
       previewImage: "/assets/entertainment-main.jpeg",
       previewDesc: "A perfect component for online stores who are starting to build confidence in their online presence!",
+    },
+    {
+      name: "Angular Slider",
+      desc: "Multi-slide slider built with hammerJS",
+      background: "/assets/slider.png",
+      type: "react",
+      url: "/project/slider",
+      previewURL: "https://angular-slider.herokuapp.com/",
+      gitURL: "https://github.com/DevelopStudios/angular-slider",
+      previewImage: "/assets/slider.png",
+      previewDesc: "Slide through these slides using you cursor or thumb!",
     }
   ],
   service: [
@@ -168,6 +179,10 @@ app.get("/project/order-summary", function (req, res) {
 
 app.get("/project/entertainment", function (req, res) {
   res.render("pages/project", { indexData: indexData.projects[4] });
+});
+
+app.get("/project/slider", function (req, res) {
+  res.render("pages/project", { indexData: indexData.projects[5] });
 });
 
 

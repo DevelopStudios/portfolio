@@ -307,6 +307,7 @@ p.text-center.text-muted span.brand {
 /* Recent Works Section */
 .recent-works-container {
   background: #303131;
+  padding-bottom: 5%;
 }
 
 .company-image-overlay {

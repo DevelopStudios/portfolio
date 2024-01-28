@@ -140,7 +140,7 @@ li > a:hover::before {
 }
 
 .typography {
-  padding-left: 5vw;
+  padding-left: 4vw;
 }
 
 .about-container {
@@ -280,9 +280,6 @@ p.text-center.text-muted span.brand {
   height: 314px;
   border-radius: 10px;
   margin-bottom: 50px;
-}
-
-.entry .header {
 }
 
 .entry .text {

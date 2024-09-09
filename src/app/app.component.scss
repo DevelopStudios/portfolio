@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+    height:87px;
+    align-items: center;
+    .left-container {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        .icon {
+            width: 48px;
+            margin-right: 10px;
+        }
+        .text {
+            color:#fff;
+        }
+    }
+    .right-container { 
+        margin-right: 15px;
+        button.nav-button.contact {
+            background: #1c2227;
+            font-size: 16px;
+            padding: 30px 30px;
+        }
+    }
+}
+mat-divider.mat-divider.mat-divider-horizontal {
+    background: #3a4144;
+    width: 83vw;
+    margin: auto;
+    opacity: 0.2;
+}

@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="entries" *ngFor="let item of entries">
+        <div class="image">
+            <img src="./{{item.image}}" alt="">
+        </div>
+        <div class="company">
+            {{item.company}}
+        </div>
+        <div class="title">
+            {{item.title}}
+        </div>
+    </div>
+</div>

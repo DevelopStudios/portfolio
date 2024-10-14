@@ -31,3 +31,43 @@ mat-divider.mat-divider.mat-divider-horizontal {
     margin: auto;
     opacity: 0.2;
 }
+.about {
+    padding-top:9rem;
+    padding-bottom:9rem;
+    padding-left:2rem;
+    padding-right:2rem;
+    max-width: 64rem;
+    margin: 0 auto;
+    .title {
+        font-weight: 800;
+        color: #dedede;
+        font-size: .875rem;
+        line-height: 1.25rem;
+        text-align: center;
+        margin-bottom: 1rem
+    }
+    .description {
+        color: #dedede;
+        line-height: 1.25;
+        font-size: 4.5rem;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+.footer {
+    color:#7A7F86;
+    margin:10px 20px;
+    padding-bottom: 20px;
+    .container  {
+        display: flex;
+        justify-content: space-between;
+        .right {
+            button.contact {
+                background: #1c2227;
+                font-size: 16px;
+                padding: 30px 30px;
+            }
+        }
+    }
+}
+    

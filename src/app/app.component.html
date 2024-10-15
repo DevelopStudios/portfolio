@@ -28,6 +28,38 @@
   </div>
 </div>
 
+<div class="projects">
+  <div class="title">
+    PERSONAL PROJECTS
+  </div>
+  <div class="description">
+    All projects I've worked on
+  </div>
+
+  <div class="entry-container">
+    <div class="entry" *ngFor="let item of projects">
+      <div class="image">
+        <img src="{{item.previewImage}}" alt="">
+      </div>
+      <div class="title">
+        {{item.name}}
+      </div>
+
+      <div class="actions">
+        <div class="github">
+          github
+          <button mat-button>
+          
+          </button>
+        </div>
+        <div class="preview">
+          preview
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <div class="footer">
   <div class="container">

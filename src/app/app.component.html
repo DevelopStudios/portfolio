@@ -47,14 +47,18 @@
 
       <div class="actions">
         <div class="github">
-          <button class="entry-button">
-            Github
-          </button>
+          <a [href]="item.gitURL" target="_blank">
+            <button class="entry-button">
+              Github
+            </button>
+          </a>
         </div>
         <div class="preview">
-          <button class="entry-button">
-            Preview
-          </button>
+          <a [href]="item.previewURL" target="_blank">
+            <button class="entry-button">
+              Preview
+            </button>
+          </a>
         </div>
       </div>
 
